@@ -1,0 +1,13 @@
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background: rgba(5, 172, 106, 0.3);
+}
+
+.Button img {
+  cursor: pointer;
+}

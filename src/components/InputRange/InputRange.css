@@ -1,0 +1,39 @@
+.InputRange {
+  --range-progress: 0;
+
+  appearance: none;
+  position: relative;
+  background: #ccc;
+  width: 100%;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.InputRange::before {
+  content: "";
+  height: 4px;
+  background: #05ac6a;
+  width: var(--range-progress);
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.InputRange::-webkit-slider-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #05ac6a;
+  cursor: pointer;
+  position: relative;
+}
+
+.InputRange:active::-webkit-slider-thumb {
+  transform: scale(1.2);
+}
